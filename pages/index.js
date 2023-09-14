@@ -1,62 +1,52 @@
 import Head from 'next/head';
+
+import common_styles from '../styles/Common.module.css'
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className={common_styles.container}>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>上堂啦</title>
+        <link rel="icon" href="/images/icon.png" />
       </Head>
 
       <main>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+        <h1 className={common_styles.title}>
+          上堂啦 hi
         </h1>
 
-        <p className={styles.description}>
-          Get started by editing <code>pages/index.js</code>
+        <p className={common_styles.description}>
+          上堂是一種生活態度，走堂罰錢是非常合理的。
         </p>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
+          <a href="/rules" className={styles.card}>
+            <h3>規則 &rarr;</h3>
+            <p>查看遊戲規則</p>
           </a>
 
           <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+            <h3>開新 Sem &rarr;</h3>
+            <p>開拓收入來源，實現財自</p>
           </a>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+          <a href="https://nextjs.org/learn" className={styles.card}>
+            <h3>繼續今個 Sem &rarr;</h3>
+            <p>每日點名，看看今天又賺了多少</p>
           </a>
 
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
         </div>
       </main>
 
       <footer>
         <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          href="https://github.com/AlfredChow2338?tab=repositories"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
+          Powered by <code>AlfredChow2338</code>
+          <img src="/images/icon.png" alt="Alfred Chow" className={styles.logo} />
         </a>
       </footer>
 
@@ -90,8 +80,9 @@ export default function Home() {
         code {
           background: #fafafa;
           border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
+          padding: 0.25rem;
+          margin: 0 0.5rem;
+          font-size: 0.8rem;
           font-family:
             Menlo,
             Monaco,
